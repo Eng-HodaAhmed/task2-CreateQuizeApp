@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+body{
+    background-image: linear-gradient( rgba(0,0,0,0.9), rgba(0, 0, 0, 0.8)), url("./background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: monospace;
+}
+.start{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.startBtn{
+    padding: 10px 50px;
+    font-size: 18px;
+}
+
+.displayContainer{
+     max-width: 500px;
+    width: 40%;
+    margin:0 auto;
+    position: absolute;
+    background-color: #ffffff;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    padding: 20px;
+}
+.header{
+    padding-bottom:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    margin-bottom: 30px;
+    
+
+}
+.nextBtn{
+    padding: 7px 30px;
+    background-color: rgb(63, 63, 243);
+    border-radius: 3px;
+    border: none;
+    color: white;
+}
+.question{
+    font-size: 20px;
+    font-weight: bold;
+}
+.answer{
+    font-size: 18px;
+    margin:20px 0;
+    width:100%;
+    display:inline-block
+   
+}
+.hide{
+    display: none;
+}
+.scoreContainer{
+
+    /* justify-content: space-between; */
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    padding: 20px;
+    width: 40%;
+    height: 60vh;
+    background-color: rgb(238, 242, 245);
+}
+.score , .img{
+    margin-right: 20px;
+    margin-top: 10%;
+    float: left;
+    width:44%;
+    height: 60%;
+}
+.succsess{
+ background-image: url(./images\ \(4\)\ \(30\).jpeg);
+ background-position: center;
+ background-size: contain;
+}
+.fail{
+background-position: center;
+background-size: contain;
+background-image: url(./images\ \(4\)\ \(31\).jpeg);
+}
+.close{
+    width: 15%;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(56, 56, 234);
+}
+.disabled{
+color:gray;
+    opacity: 0.4;
+}
